@@ -16,7 +16,6 @@ const App = () => {
       window.open(url, "_blank");
     }
   };
-  
 
   return (
     <>

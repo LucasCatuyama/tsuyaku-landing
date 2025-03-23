@@ -1,4 +1,3 @@
-import Button from './components/Button';
 import Header from './layouts/Header';
 import Testimonials from './layouts/Testimonials';
 
@@ -21,10 +20,7 @@ const App = () => {
 
   return (
     <>
-      <Header></Header>
-      <Button onClick={() => redirectWhatsapp()}>
-        Mandar
-      </Button>
+      <Header onContatoClick={redirectWhatsapp}></Header>
       <Testimonials></Testimonials>
     </>
   );

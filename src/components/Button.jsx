@@ -1,7 +1,7 @@
 const Button = ({ children, onClick }) => {
     return (
       <button
-        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        className="bg-orange-400 text-white px-4 py-2 rounded hover:bg-orange-600 cursor-pointer"
         onClick={onClick}
       >
         {children}

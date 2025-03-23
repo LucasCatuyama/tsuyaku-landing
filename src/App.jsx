@@ -1,5 +1,13 @@
 import Header from './layouts/Header';
+import Hero from './layouts/Hero';
+import Service from './layouts/Service';
+import About from './layouts/About';
+import Reason from './layouts/Reason';
 import Testimonials from './layouts/Testimonials';
+import Price from './layouts/Price';
+import Cta from './layouts/Cta';
+import Footer from './layouts/Footer';
+
 
 const App = () => {
   const redirectWhatsapp = () => {
@@ -21,7 +29,14 @@ const App = () => {
   return (
     <>
       <Header onContatoClick={redirectWhatsapp}></Header>
+      <Hero onContatoClick={redirectWhatsapp}></Hero>
+      <Service></Service>
+      <About></About>
+      <Reason></Reason>
       <Testimonials></Testimonials>
+      <Price></Price>
+      <Cta></Cta>
+      <Footer></Footer>
     </>
   );
 };

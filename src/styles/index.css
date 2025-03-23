@@ -3,3 +3,10 @@
 html {
     scroll-behavior: smooth;
   }
+
+  :root {
+    --light-bg: #F4F8F9;
+    --dark-bg: #033347;
+    --button-blue: #298E9E;
+    /* --text-yellow: #d19132; */
+  }

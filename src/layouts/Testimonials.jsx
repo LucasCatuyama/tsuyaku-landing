@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 export default function Testimonials() {
   return (
-    <section id='testimonial' className="bg-gray-50 py-16">
+    <section id='testimonial' className="bg-[var(--dark-bg)] py-16">
       <div className=" mx-auto px-6 md:px-12">
         <motion.h2
-          className="text-4xl font-bold text-center text-gray-800 mb-12"
+          className="text-4xl font-bold text-center text-gray-200 mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

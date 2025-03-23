@@ -35,8 +35,9 @@ const App = () => {
       <Reason></Reason>
       <Testimonials></Testimonials>
       <Price></Price>
-      <Cta></Cta>
+      <Cta onContatoClick={redirectWhatsapp}></Cta>
       <Footer></Footer>
+      
     </>
   );
 };

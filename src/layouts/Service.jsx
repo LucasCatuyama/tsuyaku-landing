@@ -3,17 +3,17 @@ import { Stethoscope, FileText, Landmark } from 'lucide-react';
 
 const services = [
   {
-    icon: <Stethoscope className="w-8 h-8 text-orange-400" />,
+    icon: <Stethoscope className="w-8 h-8 text-[var(--button-blue)]" />,
     title: 'Acompanhamento ao médico',
     description: 'Tradução e apoio durante consultas, exames e atendimentos hospitalares.',
   },
   {
-    icon: <Landmark className="w-8 h-8 text-orange-400" />,
+    icon: <Landmark className="w-8 h-8 text-[var(--button-blue)]" />,
     title: 'Acompanhamento a órgãos públicos',
     description: 'Apoio em prefeitura, imigração, correios e outros serviços públicos.',
   },
   {
-    icon: <FileText className="w-8 h-8 text-orange-400" />,
+    icon: <FileText className="w-8 h-8 text-[var(--button-blue)]" />,
     title: 'Tradução de documentos',
     description: 'Tradução de certificados, contratos, formulários e documentos oficiais.',
   },
@@ -37,7 +37,7 @@ const Service = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-md transition duration-300"
+              className="bg-[var(--light-bg)] p-6 rounded-2xl shadow hover:shadow-md transition duration-300"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}

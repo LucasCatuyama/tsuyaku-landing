@@ -3,32 +3,32 @@ import { BadgeCheck, Languages, School, BookOpen, Code, Heart } from "lucide-rea
 
 const motivos = [
   {
-    icon: <Languages className="w-8 h-8 text-orange-400" />,
+    icon: <Languages className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Fluência em Japonês",
     description: "Certificação JLPT N1 e domínio completo do idioma.",
   },
   {
-    icon: <School className="w-8 h-8 text-orange-400" />,
+    icon: <School className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Vivência no Japão",
     description: "Fui alfabetizado e estudei no Japão, com conhecimento cultural profundo.",
   },
   {
-    icon: <BookOpen className="w-8 h-8 text-orange-400" />,
+    icon: <BookOpen className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Formação Acadêmica",
     description: "Graduado em Administração e cursando Engenharia de Software.",
   },
   {
-    icon: <BadgeCheck className="w-8 h-8 text-orange-400" />,
+    icon: <BadgeCheck className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Experiência como Professor",
     description: "Já atuei como professor de japonês com foco em clareza e didática.",
   },
   {
-    icon: <Code className="w-8 h-8 text-orange-400" />,
+    icon: <Code className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Tradutor com visão técnica",
     description: "Experiência em tradução com sensibilidade linguística e precisão.",
   },
   {
-    icon: <Heart className="w-8 h-8 text-orange-400" />,
+    icon: <Heart className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Atendimento Humanizado",
     description: "Empatia, paciência e compromisso em cada atendimento, pensando no bem-estar do cliente.",
   },
@@ -51,7 +51,7 @@ const Reason = () => {
           {motivos.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition duration-300"
+              className="bg-[var(--light-bg)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}

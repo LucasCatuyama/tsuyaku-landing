@@ -1,0 +1,26 @@
+[
+    {
+        "quote": "This is the quote",
+        "description": "This is the description",
+        "author": "This is the author",
+        "rating": 5
+    },
+    {
+        "quote": "This is the quote",
+        "description": "This is the description",
+        "author": "This is the author",
+        "rating": 4
+    },
+    {
+        "quote": "This is the quote",
+        "description": "This is the description",
+        "author": "This is the author",
+        "rating": 2
+    },
+    {
+        "quote": "Ótimo serviço",
+        "description": "O melhor tradutor de Izumo",
+        "author": "Cliente, Izumo",
+        "rating": 5
+    }
+]

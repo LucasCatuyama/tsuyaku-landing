@@ -5,8 +5,18 @@ const App = () => {
     const phone = import.meta.env.VITE_WHATSAPP_PHONE;
     const message = "Olá! Quero saber mais sobre o Tsuyaku.";
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
+  
+    const isMobile = /iPhone|Android|iPad|iPod/i.test(navigator.userAgent);
+  
+    if (isMobile) {
+      // Melhor comportamento para celular
+      window.location.href = url;
+    } else {
+      // Abre em nova aba no desktop
+      window.open(url, "_blank");
+    }
   };
+  
 
   return (
     <>

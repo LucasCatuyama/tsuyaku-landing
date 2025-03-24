@@ -7,8 +7,8 @@ const Hero = ({ onContatoClick }) => {
   return (
     <section
       id="hero"
-      className="bg-[var(--light-bg)] flex flex-col justify-center px-6 md:px-12 relative"
-      style={{ minHeight: "calc(100vh - 80px)" }}
+      className="bg-[var(--light-bg)] flex flex-col justify-center px-6 pt- md:px-12 relative"
+      style={{ minHeight: "100vh" }}
     >
       <motion.div
         className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 py-12"
@@ -52,7 +52,9 @@ const Hero = ({ onContatoClick }) => {
             <p className="text-lg md:text-xl text-gray-700 mb-6">
             Atendimento humano, rápido e com empatia. <br /> Vamos conversar e entender sua necessidade.
             </p>
-          <Button onClick={onContatoClick}>Conversar no WhatsApp</Button>
+          <div className="flex items-center justify-center">
+            <Button className="justify-center items-center" onClick={onContatoClick}>Conversar no WhatsApp</Button>
+          </div>  
         </motion.div>
       </motion.div>
 

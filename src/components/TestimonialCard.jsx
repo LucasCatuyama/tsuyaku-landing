@@ -2,7 +2,7 @@ import quotes from '../assets/quote-yellow.png';
 
 const TestimonialCard = ({ data }) => {
   return (
-    <div className="bg-[var(--light-bg)] rounded-2xl p-6 shadow-md max-w-sm">
+    <div className="bg-[var(--light-bg)] rounded-2xl p-6 shadow-md max-w-sm min-h-full">
       <img src={quotes} alt="quote icon" className="w-6 h-6 mb-4 text-[var(--text-yellow)]" />
 
       <h3 className="text-xl font-bold mb-2">{data.quote}</h3>

@@ -23,7 +23,7 @@ const pulseAnimation = {
 
 const Cta = ({ onContatoClick }) => {
   return (
-    <section className="relative bg-[var(--light-bg)] py-24 px-6 md:px-10 overflow-hidden">
+    <section className=" relative bg-[var(--light-bg)] py-24 px-6 md:px-10 overflow-hidden">
       <motion.div
         className="relative z-10 max-w-4xl mx-auto text-center"
         initial="hidden"
@@ -39,25 +39,25 @@ const Cta = ({ onContatoClick }) => {
         </motion.h2>
 
         <motion.p
-          className="text-lg md:text-xl text-gray-700 mb-4"
+          className="text-lg text-left md:text-xl text-gray-700 mb-4"
           variants={fadeIn}
           custom={1}
         >
-          Tenha apoio profissional em qualquer situação no Japão.<br></br> Conte com um atendimento acolhedor, ágil e totalmente em português.
+          Tenha apoio profissional de um tradutor em qualquer situação no Japão.<br></br> Conte com um atendimento acolhedor, ágil e inteiramente em português.
         </motion.p>
 
         <motion.p
-          className="text-md text-gray-600 mb-10"
+          className="text-lg text-left text-gray-700 mb-10"
           variants={fadeIn}
           custom={2}
         >
-          Entre em contato agora mesmo. A primeira ligação é gratuita e sem compromisso.
+          Vamos conversar sobre sua necessidade.
         </motion.p>
 
         <motion.div variants={fadeIn} custom={3}>
           <motion.div {...pulseAnimation} className="inline-block">
             <Button onClick={onContatoClick}>
-              Solicitar atendimento agora
+              Conversar no WhatsApp
             </Button>
           </motion.div>
         </motion.div>

@@ -5,12 +5,7 @@ const steps = [
   {
     icon: <Languages className="w-6 h-6 text-white" />,
     title: "Alfabetização no Japão",
-    text: "Estudei e fui alfabetizado no Japão, vivenciando a cultura e o idioma desde cedo.",
-  },
-  {
-    icon: <GraduationCap className="w-6 h-6 text-white" />,
-    title: "Formação Acadêmica",
-    text: "Sou graduado em Administração e atualmente curso Engenharia de Software no Brasil.",
+    text: "Fui alfabetizado no Japão, vivenciando desde cedo a cultura e o idioma no dia a dia.",
   },
   {
     icon: <BookOpen className="w-6 h-6 text-white" />,
@@ -20,8 +15,13 @@ const steps = [
   {
     icon: <Briefcase className="w-6 h-6 text-white" />,
     title: "Experiência Profissional",
-    text: "Atuei como professor de japonês e também com tradução em diversos contextos.",
+    text: "Atuei como tradutor em uma empresa japonesa com foco na expansão para o Brasil.",
   },
+  // {
+  //   icon: <GraduationCap className="w-6 h-6 text-white" />,
+  //   title: "Formação Acadêmica",
+  //   text: "Sou graduado em Administração e atualmente curso Engenharia de Software no Brasil.",
+  // },
 ];
 
 const About = () => {

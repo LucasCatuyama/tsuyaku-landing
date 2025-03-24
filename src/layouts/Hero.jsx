@@ -27,14 +27,14 @@ const Hero = ({ onContatoClick }) => {
           <img
             src={myImage}
             alt="Tradução e suporte no Japão"
-            className="rounded-2xl shadow-md object-cover w-full max-w-md h-auto"
+            className="rounded-2xl shadow-md object-cover w-full max-w-md sm:h-auto "
             style={{ maxHeight: "450px" }}
           />
         </motion.div>
 
         {/* Texto */}
         <motion.div
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 items-center justify-center sm: h-auto"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -50,9 +50,9 @@ const Hero = ({ onContatoClick }) => {
             </p>
 
             <p className="text-lg md:text-xl text-gray-700 mb-6">
-            Atendimento humano, rápido e com empatia. A primeira ligação é <strong className="text-[var(--text-dark-blue)]">gratuita</strong> e sem compromisso.
+            Atendimento humano, rápido e com empatia. <br /> Vamos conversar e entender sua necessidade.
             </p>
-          <Button onClick={onContatoClick}>Fale comigo agora</Button>
+          <Button onClick={onContatoClick}>Conversar no WhatsApp</Button>
         </motion.div>
       </motion.div>
 

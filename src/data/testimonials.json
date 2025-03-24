@@ -1,26 +1,20 @@
 [
     {
-        "quote": "This is the quote",
-        "description": "This is the description",
-        "author": "This is the author",
+        "quote": "Excelente profissional,carismático e muito dedicado!!",
+        "description": "Precisei resolver algumas questões pendentes e o Lucas prontamente me auxiliou nas traduções!! ",
+        "author": "A.A. - Izumo",
         "rating": 5
     },
     {
-        "quote": "This is the quote",
-        "description": "This is the description",
-        "author": "This is the author",
+        "quote": "Simpatico, profissional e eficiente!",
+        "description": "Tive algumas emergências médicas e prontamente o Lucas pôde me atender. Sempre simpático, profissional e discreto.",
+        "author": "M.V. - Izumo",
         "rating": 5
     },
     {
-        "quote": "This is the quote",
-        "description": "This is the description",
-        "author": "This is the author",
-        "rating": 5
-    },
-    {
-        "quote": "This is the quote",
-        "description": "This is the description",
-        "author": "This is the author",
+        "quote": "Profissional, simpático e educado ",
+        "description": "Precisava de tradutor em última hora e me indicaram o Lucas, muito simpático, profissional e disposto em ajudar.",
+        "author": "M. - Izumo",
         "rating": 5
     }
 ]

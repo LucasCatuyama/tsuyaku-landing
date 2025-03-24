@@ -5,27 +5,27 @@ const motivos = [
   {
     icon: <Languages className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Fluência em Japonês",
-    description: "Certificação JLPT N1 e domínio completo do idioma.",
+    description: "Certificação JLPT N1 com nota máxima em gramática e vocabulário.",
   },
   {
     icon: <School className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Vivência no Japão",
-    description: "Fui alfabetizado e estudei no Japão, com conhecimento cultural profundo.",
-  },
-  {
-    icon: <BookOpen className="w-8 h-8 text-[var(--button-blue)]" />,
-    title: "Formação Acadêmica",
-    description: "Graduado em Administração e cursando Engenharia de Software.",
+    description: "Alfabetizado e criado no Japão, com conhecimento profundo da cultura e do idioma.",
   },
   {
     icon: <BadgeCheck className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Experiência como Professor",
-    description: "Já atuei como professor de japonês com foco em clareza e didática.",
+    description: "Atuação em sala de aula com foco em clareza e didática.",
   },
   {
     icon: <Code className="w-8 h-8 text-[var(--button-blue)]" />,
     title: "Tradutor com visão técnica",
     description: "Experiência em tradução com sensibilidade linguística e precisão.",
+  },
+  {
+    icon: <BookOpen className="w-8 h-8 text-[var(--button-blue)]" />,
+    title: "Formação Acadêmica",
+    description: "Graduado em Administração e cursando Engenharia de Software no Brasil, com domínio da língua portuguesa.",
   },
   {
     icon: <Heart className="w-8 h-8 text-[var(--button-blue)]" />,

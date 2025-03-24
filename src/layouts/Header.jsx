@@ -33,7 +33,7 @@ const Header = ({ onContatoClick }) => {
         {/* Logo e botão do menu */}
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-gray-700">
-            Tradução em Izumo
+            Tradutor em Izumo
           </h1>
     
           <button

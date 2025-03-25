@@ -12,9 +12,15 @@
         "rating": 5
     },
     {
-        "quote": "Profissional, simpático e educado ",
+        "quote": "Profissional, simpático e educado",
         "description": "Precisava de tradutor em última hora e me indicaram o Lucas, muito simpático, profissional e disposto em ajudar.",
         "author": "M. - Izumo",
+        "rating": 5
+    },
+    {
+        "quote": "Super índico, é um excelente profissional",
+        "description": "Descobrimos o Catuyama Lucas, por meio de um anúncio local, ele fez o meu primeiro acompanhamento médico e apresentou-se solícito, pró-ativo, a sua performance de tradução está acima da média, sem dúvidas é um excelente profissional na área e estará-me acompanhando durante todo o meu tratamento médico",
+        "author": "H.J. - Izumo",
         "rating": 5
     }
 ]

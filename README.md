@@ -1,4 +1,4 @@
-# Tsuyaku (通訳) — Personal Interpretation Service
+# 🌐 Tsuyaku (通訳) — Personal Interpretation Service
 
 This is the official landing page for my personal interpretation and translation services between **Portuguese and Japanese** that I offer as freelancing.
 
@@ -19,7 +19,7 @@ This website was created to showcase my work and make it easy for people to reac
 
 ## 🌐 Website
 
-👉 [Check out my landing  page](https://tradutoremizumo.jp/)
+👉 [Check out my website](https://tradutoremizumo.jp/)
 
 Visit the website to learn more about my services, differentials, and how to get in touch.
 
@@ -43,7 +43,3 @@ This website was created:
 If you or someone you know needs help with Portuguese-Japanese communication in Japan, feel free to reach out!
 
 🔗 [LinkedIn](https://www.linkedin.com/in/lucascatuyama)
-
----
-
-*This website is a personal project and not a commercial software product.*

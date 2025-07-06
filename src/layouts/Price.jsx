@@ -22,10 +22,10 @@ const Price = () => {
           viewport={{ once: true }}
         >
           <p>
-            <strong className="text-gray-700 text-xl">¥3000</strong> pela primeira hora
+            <strong className="text-gray-700 text-xl">¥5000</strong> as primeiras 3 horas
           </p>
           <p>
-            <strong className="text-gray-700 text-xl">¥1000</strong> por hora adicional
+            <strong className="text-gray-700 text-xl">¥1000</strong> por hora após a terceira hora
           </p>
           <p className="text-gray-600">
             A ligação para agendamento é <strong className="text-yellow-600">gratuita</strong>

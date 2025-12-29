@@ -12,11 +12,16 @@ const Hero = ({ onContatoClick }) => {
   return (
     <section
       id="hero"
-      className="bg-[var(--light-bg)] flex flex-col justify-center px-6 pt-24 md:px-12 relative"
+      className="bg-[var(--bg)] flex flex-col justify-center px-6 pt-24 md:px-12 relative overflow-hidden"
       style={{ minHeight: "100vh" }}
     >
+      {/* subtle premium glow */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[900px] rounded-full bg-[radial-gradient(circle,rgba(91,124,255,0.22),rgba(139,92,255,0.06),transparent_60%)] blur-2xl" />
+      </div>
+
       <motion.div
-        className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 py-12"
+        className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 py-12"
         initial={{ opacity: 0, y: reducedMotion ? 0 : 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: reducedMotion ? 0.001 : 0.9, ease: 'easeOut' }}
@@ -29,7 +34,7 @@ const Hero = ({ onContatoClick }) => {
           <img
             src={myImage}
             alt={t('hero.imageAlt')}
-            className="rounded-2xl shadow-md object-cover w-full max-w-md sm:h-auto "
+            className="rounded-2xl object-cover w-full max-w-md sm:h-auto border border-[var(--border)] shadow-[var(--shadow)]"
             style={{ maxHeight: "450px" }}
           />
         </motion.div>
@@ -39,17 +44,17 @@ const Hero = ({ onContatoClick }) => {
           className="w-full md:w-1/2 items-center justify-center sm: h-auto"
           {...fadeUp(reducedMotion, { delay: 0.15, distance: 18 })}
         >
-            <h1 className="text-4xl text-gray-800 md:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl text-[var(--text)] md:text-6xl font-bold mb-6 leading-tight tracking-tight">
             {t('hero.title')}
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed">
+            <p className="text-lg md:text-xl text-[var(--muted)] mb-6 leading-relaxed">
             {t('hero.p1Before')}{' '}
-            <strong className="text-yellow-600">Lucas Catuyama</strong>{' '}
+            <strong className="text-white">Lucas Catuyama</strong>{' '}
             {t('hero.p1After')}
             </p>
 
-            <p className="text-lg md:text-xl text-gray-700 mb-6">
+            <p className="text-lg md:text-xl text-[var(--muted)] mb-6">
             {t('hero.p2')}
             </p>
           <div className="flex items-center justify-center">
@@ -62,7 +67,7 @@ const Hero = ({ onContatoClick }) => {
 
       {/* Scroll cue - seta animada */}
       <motion.div
-        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-[var(--button-blue)] cursor-pointer"
+        className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-[var(--muted)] hover:text-[var(--text)] cursor-pointer transition"
         animate={reducedMotion ? undefined : { y: [0, 10, 0] }}
         transition={reducedMotion ? undefined : { duration: 1.5, repeat: Infinity }}
         onClick={() => {

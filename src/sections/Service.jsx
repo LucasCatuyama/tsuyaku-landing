@@ -15,10 +15,10 @@ const Service = () => {
   const services = t('services.items') || [];
 
   return (
-    <section id="services" className="bg-white py-16 px-6 md:px-12">
+    <section id="services" className="bg-[var(--bg-2)] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold mb-12 text-center text-gray-700"
+          className="text-4xl font-bold mb-12 text-center text-[var(--text)] tracking-tight"
           {...fadeUp(reducedMotion, { distance: 16 })}
         >
           {t('services.title')}
@@ -28,14 +28,14 @@ const Service = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-[var(--light-bg)] p-6 rounded-2xl shadow hover:shadow-md transition duration-300"
+              className="bg-[var(--surface)] border border-[var(--border)] p-6 rounded-2xl shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow)] transition duration-300"
               {...fadeUp(reducedMotion, { delay: index * 0.08 })}
             >
               <div className="flex items-center gap-4 mb-4">
                 {icons[index] ?? icons[0]}
-                <h3 className="text-xl font-semibold text-gray-800">{service.title}</h3>
+                <h3 className="text-xl font-semibold text-[var(--text)]">{service.title}</h3>
               </div>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-[var(--muted)]">{service.description}</p>
             </motion.div>
           ))}
         </div>

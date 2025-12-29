@@ -18,10 +18,10 @@ const Reason = () => {
   const motivos = t('reasons.items') || [];
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12">
+    <section className="bg-[var(--bg)] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold mb-12 text-center text-gray-800"
+          className="text-4xl font-bold mb-12 text-center text-[var(--text)] tracking-tight"
           {...fadeUp(reducedMotion, { distance: 16 })}
         >
           {t('reasons.title')}
@@ -31,14 +31,14 @@ const Reason = () => {
           {motivos.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-[var(--light-bg)] p-6 rounded-2xl shadow hover:shadow-lg transition duration-300"
+              className="bg-[var(--surface)] border border-[var(--border)] p-6 rounded-2xl shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow)] transition duration-300"
               {...fadeUp(reducedMotion, { delay: index * 0.08 })}
             >
               <div className="flex items-center gap-4 mb-4">
                 {icons[index] ?? icons[0]}
-                <h3 className="text-xl font-semibold text-gray-800">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[var(--text)]">{item.title}</h3>
               </div>
-              <p className="text-gray-600 text-base">{item.description}</p>
+              <p className="text-[var(--muted)] text-base">{item.description}</p>
             </motion.div>
           ))}
         </div>

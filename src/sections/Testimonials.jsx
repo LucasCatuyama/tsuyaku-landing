@@ -9,10 +9,10 @@ export default function Testimonials() {
   const reducedMotion = useReducedMotion();
 
   return (
-    <section id='testimonial' className="bg-[var(--dark-bg)] py-16">
+    <section id='testimonial' className="bg-[var(--bg-2)] py-16">
       <div className=" mx-auto px-6 md:px-12">
         <motion.h2
-          className="text-4xl font-bold text-center text-gray-200 mb-12"
+          className="text-4xl font-bold text-center text-[var(--text)] mb-12 tracking-tight"
           {...fadeUp(reducedMotion, { distance: 16 })}
         >
           {t('testimonials.title')}

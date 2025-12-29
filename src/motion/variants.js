@@ -1,10 +1,10 @@
 export const VIEWPORT_ONCE = { once: true, amount: 0.25 };
 
-const EASE = [0.22, 1, 0.36, 1]; // easeOut-ish
+const EASE = [0.19, 1, 0.22, 1]; // smoother premium ease-out
 
 export function fadeUp(reducedMotion, { delay = 0, distance = 24, duration = 0.6 } = {}) {
   const d = reducedMotion ? 0 : distance;
-  const dur = reducedMotion ? 0.001 : duration;
+  const dur = reducedMotion ? 0.001 : Math.max(duration, 0.7);
   return {
     initial: { opacity: 0, y: d },
     whileInView: { opacity: 1, y: 0 },
@@ -14,7 +14,7 @@ export function fadeUp(reducedMotion, { delay = 0, distance = 24, duration = 0.6
 }
 
 export function fadeIn(reducedMotion, { delay = 0, duration = 0.5 } = {}) {
-  const dur = reducedMotion ? 0.001 : duration;
+  const dur = reducedMotion ? 0.001 : Math.max(duration, 0.65);
   return {
     initial: { opacity: 0 },
     whileInView: { opacity: 1 },

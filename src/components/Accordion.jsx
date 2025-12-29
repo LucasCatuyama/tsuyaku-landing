@@ -12,17 +12,20 @@ export default function Accordion({ items = [] }) {
         const panelId = `${baseId}-panel-${idx}`;
 
         return (
-          <div key={idx} className="rounded-xl border border-gray-200 bg-white overflow-hidden">
+          <div
+            key={idx}
+            className="rounded-xl border border-[var(--border)] bg-[var(--surface)] overflow-hidden shadow-[var(--shadow-soft)]"
+          >
             <button
               id={buttonId}
               type="button"
-              className="w-full px-4 py-4 text-left flex items-center justify-between gap-4"
+              className="w-full px-4 py-4 text-left flex items-center justify-between gap-4 hover:bg-[var(--surface-2)] transition"
               aria-expanded={isOpen}
               aria-controls={panelId}
               onClick={() => setOpenIndex(isOpen ? -1 : idx)}
             >
-              <span className="font-semibold text-gray-800">{item.q}</span>
-              <span className="text-gray-500">{isOpen ? '–' : '+'}</span>
+              <span className="font-semibold text-[var(--text)]">{item.q}</span>
+              <span className="text-[var(--muted)]">{isOpen ? '–' : '+'}</span>
             </button>
 
             <div
@@ -31,7 +34,7 @@ export default function Accordion({ items = [] }) {
               aria-labelledby={buttonId}
               className={isOpen ? 'px-4 pb-4' : 'px-4 pb-4 hidden'}
             >
-              <p className="text-gray-700 leading-relaxed">{item.a}</p>
+              <p className="text-[var(--muted)] leading-relaxed">{item.a}</p>
             </div>
           </div>
         );

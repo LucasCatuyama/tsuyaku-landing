@@ -15,26 +15,27 @@ export default function Situations() {
   };
 
   return (
-    <section id="situations" className="bg-[var(--light-bg)] py-16 px-6 md:px-12">
+    <section id="situations" className="bg-[var(--bg)] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold mb-4 text-center text-gray-800"
+          className="text-4xl font-bold mb-4 text-center text-[var(--text)] tracking-tight"
           {...fadeUp(reducedMotion, { distance: 16 })}
         >
           {t('situations.title')}
         </motion.h2>
 
-        <motion.p className="text-gray-700 text-center mb-10" {...fadeUp(reducedMotion, { delay: 0.05 })}>
+        <motion.p className="text-[var(--muted)] text-center mb-10" {...fadeUp(reducedMotion, { delay: 0.05 })}>
           {t('situations.subtitle')}
         </motion.p>
 
-        <div className="text-center text-sm text-gray-600 mb-3">{t('situations.chipsLabel')}</div>
+        <div className="text-center text-sm text-[var(--muted-2)] mb-3">{t('situations.chipsLabel')}</div>
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {cards.map((card, idx) => (
             <motion.button
               key={card.id ?? idx}
               type="button"
-              className="px-4 py-2 rounded-full bg-white border border-gray-200 text-gray-800 hover:border-[var(--button-blue)] hover:text-[var(--button-blue)] transition"
+              className="px-4 py-2 rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--text)]
+              hover:border-[var(--ring)] hover:text-white hover:bg-[var(--surface-2)] transition"
               onClick={() => handleSelect(card)}
               {...fadeUp(reducedMotion, { delay: idx * 0.04, distance: 10 })}
             >
@@ -47,20 +48,20 @@ export default function Situations() {
           {cards.map((card, idx) => (
             <motion.div
               key={card.id ?? idx}
-              className="bg-white rounded-2xl p-6 shadow hover:shadow-md transition"
+              className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-6 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow)] transition"
               {...fadeUp(reducedMotion, { delay: idx * 0.06 })}
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-1">{card.title}</h3>
-                  <p className="text-gray-600">{card.description}</p>
+                  <h3 className="text-xl font-semibold text-[var(--text)] mb-1">{card.title}</h3>
+                  <p className="text-[var(--muted)]">{card.description}</p>
                 </div>
-                <span className="text-xs text-gray-500 whitespace-nowrap">{t('situations.ctaHint')}</span>
+                <span className="text-xs text-[var(--muted-2)] whitespace-nowrap">{t('situations.ctaHint')}</span>
               </div>
 
               <div className="mt-5">
-                <p className="text-sm font-semibold text-gray-800 mb-2">{t('situations.checklistTitle')}</p>
-                <ul className="list-disc pl-5 text-gray-700 space-y-1">
+                <p className="text-sm font-semibold text-[var(--text)] mb-2">{t('situations.checklistTitle')}</p>
+                <ul className="list-disc pl-5 text-[var(--muted)] space-y-1">
                   {(card.bring || []).map((x, i) => (
                     <li key={i}>{x}</li>
                   ))}

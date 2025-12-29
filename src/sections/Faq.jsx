@@ -9,10 +9,10 @@ export default function Faq() {
   const items = t('faq.items') || [];
 
   return (
-    <section id="faq" className="bg-white py-16 px-6 md:px-12">
+    <section id="faq" className="bg-[var(--bg-2)] py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold mb-10 text-center text-gray-800"
+          className="text-4xl font-bold mb-10 text-center text-[var(--text)] tracking-tight"
           {...fadeUp(reducedMotion, { distance: 16 })}
         >
           {t('faq.title')}

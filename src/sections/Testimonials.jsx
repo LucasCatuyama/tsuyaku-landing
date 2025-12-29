@@ -1,35 +1,31 @@
 import testimonials from '../data/testimonials.json';
 import TestimonialCard from '../components/TestimonialCard';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageProvider';
+import { fadeUp, fadeIn } from '../motion/variants';
 
 export default function Testimonials() {
+  const { t } = useLanguage();
+  const reducedMotion = useReducedMotion();
+
   return (
     <section id='testimonial' className="bg-[var(--dark-bg)] py-16">
       <div className=" mx-auto px-6 md:px-12">
         <motion.h2
           className="text-4xl font-bold text-center text-gray-200 mb-12"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          {...fadeUp(reducedMotion, { distance: 16 })}
         >
-          O que os meus clientes dizem?
+          {t('testimonials.title')}
         </motion.h2>
 
         <motion.div
           className="flex flex-wrap justify-center gap-8"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true }}
+          {...fadeIn(reducedMotion, { delay: 0.05 })}
         >
           {testimonials.map((t, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              viewport={{ once: true }}
+              {...fadeUp(reducedMotion, { delay: i * 0.06 })}
             >
               <TestimonialCard data={t} />
             </motion.div>

@@ -1,14 +1,7 @@
-import { motion } from "framer-motion";
-import Button from "../components/Button";
-
-const fadeIn = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
-  }),
-};
+import { motion, useReducedMotion } from 'framer-motion';
+import Button from '../components/Button';
+import { useLanguage } from '../i18n/LanguageProvider';
+import { fadeUp } from '../motion/variants';
 
 const pulseAnimation = {
   animate: {
@@ -22,6 +15,9 @@ const pulseAnimation = {
 };
 
 const Cta = ({ onContatoClick }) => {
+  const { t } = useLanguage();
+  const reducedMotion = useReducedMotion();
+
   return (
     <section className=" relative bg-[var(--light-bg)] py-24 px-6 md:px-10 overflow-hidden">
       <motion.div
@@ -32,32 +28,32 @@ const Cta = ({ onContatoClick }) => {
       >
         <motion.h2
           className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight"
-          variants={fadeIn}
-          custom={0}
+          {...fadeUp(reducedMotion, { distance: 16 })}
         >
-          Tradução humana, empática e eficiente
+          {t('cta.title')}
         </motion.h2>
 
         <motion.p
           className="text-lg text-left md:text-xl text-gray-700 mb-4"
-          variants={fadeIn}
-          custom={1}
+          {...fadeUp(reducedMotion, { delay: 0.05 })}
         >
-          Tenha apoio profissional de um tradutor em qualquer situação no Japão.<br></br> Conte com um atendimento acolhedor, ágil e inteiramente em português.
+          {t('cta.p1')}
         </motion.p>
 
         <motion.p
           className="text-lg text-left text-gray-700 mb-10"
-          variants={fadeIn}
-          custom={2}
+          {...fadeUp(reducedMotion, { delay: 0.1 })}
         >
-          Vamos conversar sobre sua necessidade.
+          {t('cta.p2')}
         </motion.p>
 
-        <motion.div variants={fadeIn} custom={3}>
-          <motion.div {...pulseAnimation} className="inline-block">
+        <motion.div {...fadeUp(reducedMotion, { delay: 0.15 })}>
+          <motion.div
+            {...(reducedMotion ? {} : pulseAnimation)}
+            className="inline-block"
+          >
             <Button onClick={onContatoClick}>
-              Conversar no WhatsApp
+              {t('cta.button')}
             </Button>
           </motion.div>
         </motion.div>

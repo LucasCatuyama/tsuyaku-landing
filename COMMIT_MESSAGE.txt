@@ -1,0 +1,42 @@
+feat: Add trilingual support, unique sections, and enhanced UX
+
+Major enhancements to make the site more unique and visitor-friendly:
+
+✨ Features:
+- Add trilingual support (PT/JP/EN) with language toggle in header
+- Auto-detect browser language on first visit with localStorage persistence
+- Add "Situations & Prep" section with scenario-based WhatsApp messaging
+- Add FAQ section with accessible accordion component
+- Add sticky WhatsApp CTA with quick scenario selection (mobile-friendly)
+- Add scroll progress indicator for better navigation feedback
+
+🎨 UX/UI Improvements:
+- Refactor all sections to use centralized translation system
+- Implement cohesive motion system with reduced-motion support
+- Enhance all animations with consistent variants and accessibility
+- Update WhatsApp redirect to use language-aware messages
+- Improve SEO with structured data (JSON-LD) and better meta tags
+
+📁 New Files:
+- src/i18n/LanguageProvider.jsx - Language context and provider
+- src/i18n/translations.js - Centralized PT/JP/EN translations
+- src/hooks/useLocalStorageState.js - LocalStorage state hook
+- src/motion/variants.js - Shared animation variants
+- src/components/Accordion.jsx - Accessible FAQ accordion
+- src/components/ScrollProgress.jsx - Scroll progress indicator
+- src/components/StickyWhatsAppCTA.jsx - Sticky WhatsApp CTA
+- src/sections/Situations.jsx - Situations & Prep section
+- src/sections/Faq.jsx - FAQ section
+
+🔧 Modified Files:
+- All section components (Header, Hero, Service, About, Reason, Testimonials, Price, Cta, Footer)
+- App.jsx - Add new sections and components
+- main.jsx - Wrap app with LanguageProvider
+- hooks/useWhatsAppRedirect.js - Language-aware messaging
+- components/Button.jsx - Enhanced with motion support
+- styles/index.css - Add scroll progress styles
+- index.html - SEO improvements and structured data
+
+All changes maintain WhatsApp as the primary conversion path while significantly
+enhancing the user experience with better content, accessibility, and motion.
+

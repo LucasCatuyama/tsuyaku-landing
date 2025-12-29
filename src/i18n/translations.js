@@ -13,27 +13,42 @@ export const TRANSLATIONS = {
     language: {
       label: 'Idioma',
       pt: 'PT',
-      ja: '日本語',
       en: 'EN',
     },
     nav: {
       home: 'Início',
       services: 'Serviços',
       situations: 'Situações',
-      about: 'Sobre mim',
       testimonials: 'Depoimentos',
-      price: 'Preços',
       faq: 'FAQ',
       contact: 'Entre em contato',
     },
     hero: {
-      title: 'Quebre a barreira do idioma no Japão',
+      title: 'Interpretação PT ⇄ JP no Japão',
       p1Before: 'Olá! Me chamo',
       p1After:
-        'e ofereço tradução profissional e acompanhamento presencial para brasileiros que vivem no Japão. Conte com apoio em hospitais, prefeituras e qualquer situação em que a comunicação clara seja essencial.',
-      p2: 'Atendimento humano, rápido e com empatia. Vamos conversar e entender sua necessidade.',
-      cta: 'Conversar no WhatsApp',
-      imageAlt: 'Tradução e suporte no Japão',
+        'e ajudo brasileiros no Japão com interpretação presencial e tradução — com clareza, calma e discrição.',
+      p2: 'Me diga sua situação no WhatsApp e eu te explico o melhor caminho.',
+      cta: 'Chamar no WhatsApp',
+      imageAlt: 'Intérprete e tradutor no Japão',
+      badges: ['JLPT N1', 'Atendimento humanizado', 'Sigilo e respeito', 'Izumo/Shimane (consulte)'],
+    },
+    process: {
+      title: 'Como funciona',
+      steps: [
+        { title: '1) Mensagem', text: 'Você chama no WhatsApp e descreve a situação (local, data e urgência).' },
+        { title: '2) Alinhamento', text: 'Confirmamos detalhes, documentos e como você prefere ser atendido.' },
+        { title: '3) Atendimento', text: 'Eu acompanho e interpreto com precisão, mantendo você no controle.' },
+      ],
+    },
+    proof: {
+      title: 'Por que confiar no meu trabalho',
+      items: [
+        { title: 'JLPT N1', description: 'Proficiência avançada em japonês para evitar mal-entendidos.' },
+        { title: 'Contexto local', description: 'Vivência no Japão e sensibilidade cultural no atendimento.' },
+        { title: 'Clareza sob pressão', description: 'Ajudo você a entender e ser entendido em momentos importantes.' },
+        { title: 'Discrição', description: 'Respeito e cuidado com informações médicas e pessoais.' },
+      ],
     },
     services: {
       title: 'Serviços Prestados',
@@ -137,10 +152,10 @@ export const TRANSLATIONS = {
       title: 'O que os meus clientes dizem?',
     },
     price: {
-      title: 'Preços',
+      title: 'Valores (resumo)',
       firstSuffix: 'as primeiras 3 horas',
       afterSuffix: 'por hora após a terceira hora',
-      noteBefore: 'A ligação para agendamento é',
+      noteBefore: 'Primeira conversa:',
       free: 'gratuita',
     },
     cta: {
@@ -171,7 +186,7 @@ export const TRANSLATIONS = {
         },
         {
           q: 'Quais idiomas você atende?',
-          a: 'Português, Japonês e Inglês.',
+          a: 'Português e Japonês (site em PT/EN).',
         },
       ],
     },
@@ -192,163 +207,6 @@ export const TRANSLATIONS = {
     },
   },
 
-  ja: {
-    brand: {
-      name: '出雲の通訳',
-    },
-    meta: {
-      title: '出雲の通訳・翻訳：Lucas Catuyama',
-      description:
-        '日本でのポルトガル語・日本語・英語の通訳／翻訳。病院・役所・書類のサポートをLucas Catuyamaが対応します。',
-    },
-    language: {
-      label: '言語',
-      pt: 'PT',
-      ja: '日本語',
-      en: 'EN',
-    },
-    nav: {
-      home: 'ホーム',
-      services: 'サービス',
-      situations: 'シーン',
-      about: '自己紹介',
-      testimonials: 'お客様の声',
-      price: '料金',
-      faq: 'FAQ',
-      contact: 'お問い合わせ',
-    },
-    hero: {
-      title: '日本での言葉の壁を一緒に解決します',
-      p1Before: 'こんにちは、',
-      p1After:
-        'です。日本で暮らす方のために、通訳（同行）と翻訳を提供しています。病院・役所・各種手続きなど、正確なコミュニケーションが必要な場面でサポートします。',
-      p2: '丁寧で迅速、そして寄り添う対応。まずは状況をお聞かせください。',
-      cta: 'WhatsAppで相談する',
-      imageAlt: '日本での通訳・サポート',
-    },
-    services: {
-      title: '提供サービス',
-      items: [
-        {
-          title: '病院同行通訳',
-          description: '診察・検査・入院など、医療現場での通訳とサポート。',
-        },
-        {
-          title: '役所・公的機関の同行',
-          description: '市役所、入管、郵便局などでの手続きサポート。',
-        },
-        {
-          title: '書類翻訳',
-          description: '証明書、契約書、申請書など各種書類の翻訳。',
-        },
-      ],
-    },
-    situations: {
-      title: '状況を選んで、そのままWhatsAppで連絡',
-      subtitle:
-        '状況をクリックすると、メッセージが自動で作成されます。自由に書いていただいても大丈夫です。',
-      chipsLabel: 'よくあるシーン',
-      checklistTitle: '持ち物・準備',
-      cards: [
-        {
-          id: 'hospital',
-          title: '病院／クリニック',
-          description: '診察、検査、入院、妊娠、歯科など。',
-          bring: ['保険証', '服用中の薬', '過去の検査結果', '症状メモ'],
-        },
-        {
-          id: 'cityhall',
-          title: '市役所／入管',
-          description: '住所変更、在留、税金、給付、書類関連。',
-          bring: ['在留カード', 'パスポート', '届いた手紙', '印鑑（あれば）'],
-        },
-        {
-          id: 'workschool',
-          title: '仕事／学校',
-          description: '面接、打ち合わせ、連絡事項、コミュニケーション支援。',
-          bring: ['場所の情報', '日時', '必要書類', '聞きたいことリスト'],
-        },
-        {
-          id: 'documents',
-          title: '書類',
-          description: '証明書・契約書・申請書などの翻訳。',
-          bring: ['読みやすい画像/ファイル', '目的', '締切', '正式な氏名/住所'],
-        },
-      ],
-      ctaHint: 'タップで送信',
-    },
-    about: {
-      title: '自己紹介',
-      steps: [
-        {
-          title: '日本での教育',
-          text: '日本で育ち、日常の中で文化と言語を身につけました。',
-        },
-        {
-          title: 'JLPT N1',
-          text: '日本語能力試験N1を取得し、高い日本語運用力を証明しています。',
-        },
-        {
-          title: '実務経験',
-          text: '日系企業でブラジル展開に関わる翻訳業務を担当しました。',
-        },
-      ],
-    },
-    reasons: {
-      title: '選ばれる理由',
-      items: [
-        { title: '高い日本語力', description: 'JLPT N1取得。文法・語彙にも強みがあります。' },
-        { title: '日本での生活経験', description: '文化や慣習を理解し、誤解のない通訳を心がけます。' },
-        { title: '教える経験', description: '分かりやすさを重視した説明が得意です。' },
-        { title: '技術的な視点', description: '細部の正確さとニュアンスの再現を大切にします。' },
-        { title: '学術的背景', description: 'ポルトガル語の表現にも配慮して翻訳します。' },
-        { title: '寄り添う対応', description: '不安な場面でも落ち着いてサポートします。' },
-      ],
-    },
-    testimonials: {
-      title: 'お客様の声',
-    },
-    price: {
-      title: '料金',
-      firstSuffix: '最初の3時間',
-      afterSuffix: '3時間以降（1時間あたり）',
-      noteBefore: '事前相談の通話は',
-      free: '無料',
-    },
-    cta: {
-      title: '人に寄り添う、丁寧で効率的な通訳',
-      p1:
-        '日本でのどんな場面でも、専門的にサポートします。スピーディーで温かい対応を大切にしています。',
-      p2: 'まずは状況をお聞かせください。',
-      button: 'WhatsAppで相談する',
-    },
-    faq: {
-      title: 'よくある質問',
-      items: [
-        { q: '出雲以外も対応できますか？', a: '主に出雲・島根周辺ですが、内容によってはリモート対応も可能です。' },
-        { q: '急ぎの依頼は可能ですか？', a: '空きがあれば可能です。場所・時間・緊急度を添えてご連絡ください。' },
-        { q: '支払いはどうなりますか？', a: '事前に料金をご説明し、合意の上で進めます。追加がある場合も透明にご案内します。' },
-        { q: '内容は秘密にしてもらえますか？', a: 'はい。医療・法的な内容も含め、守秘と配慮を徹底します。' },
-        { q: '対応言語は？', a: 'ポルトガル語、日本語、英語です。' },
-      ],
-    },
-    stickyCta: {
-      title: '今すぐ相談しますか？',
-      subtitle: 'タップするとWhatsAppが開きます。',
-      button: 'WhatsApp',
-    },
-    footer: {
-      rights: 'All rights reserved',
-      brand: 'Tradução em Izumo.',
-    },
-    whatsapp: {
-      defaultMessage: 'こんにちは。通訳・翻訳について相談したいです。',
-      situationMessage:
-        'こんにちは。日本で{{situation}}のサポートが必要です。場所：{{location}}。日時：{{datetime}}。詳細：{{details}}',
-      situationShort: 'こんにちは。日本で{{situation}}のサポートが必要です。',
-    },
-  },
-
   en: {
     brand: {
       name: 'Interpreter in Izumo',
@@ -361,27 +219,42 @@ export const TRANSLATIONS = {
     language: {
       label: 'Language',
       pt: 'PT',
-      ja: '日本語',
       en: 'EN',
     },
     nav: {
       home: 'Home',
       services: 'Services',
       situations: 'Situations',
-      about: 'About',
       testimonials: 'Testimonials',
-      price: 'Pricing',
       faq: 'FAQ',
       contact: 'Contact',
     },
     hero: {
-      title: 'Break the language barrier in Japan',
+      title: 'Portuguese ⇄ Japanese interpretation in Japan',
       p1Before: "Hi! I'm",
       p1After:
-        'and I provide professional interpretation and translation for people living in Japan. Get support for hospitals, city hall, immigration, and any situation where clarity matters.',
-      p2: 'Human support, fast and empathetic. Let’s talk and understand what you need.',
-      cta: 'Chat on WhatsApp',
-      imageAlt: 'Interpretation and support in Japan',
+        'and I help Brazilians in Japan with in-person interpretation and translation — with clarity, calm, and discretion.',
+      p2: 'Message me on WhatsApp and I’ll guide you through the best next step.',
+      cta: 'Message on WhatsApp',
+      imageAlt: 'Interpreter and translator in Japan',
+      badges: ['JLPT N1', 'Human support', 'Confidential', 'Izumo/Shimane (ask)'],
+    },
+    process: {
+      title: 'How it works',
+      steps: [
+        { title: '1) Message', text: 'You message me on WhatsApp with the situation (place, date, urgency).' },
+        { title: '2) Align', text: 'We confirm details, documents, and your preferences.' },
+        { title: '3) Support', text: 'I interpret accurately while keeping you informed and in control.' },
+      ],
+    },
+    proof: {
+      title: 'Why you can trust my work',
+      items: [
+        { title: 'JLPT N1', description: 'Advanced Japanese proficiency to avoid misunderstandings.' },
+        { title: 'Local context', description: 'Japan experience and cultural sensitivity.' },
+        { title: 'Clear under pressure', description: 'Help when the situation is urgent or stressful.' },
+        { title: 'Discreet', description: 'Careful handling of medical and personal information.' },
+      ],
     },
     services: {
       title: 'Services',
@@ -448,10 +321,10 @@ export const TRANSLATIONS = {
       title: 'What clients say',
     },
     price: {
-      title: 'Pricing',
+      title: 'Pricing (quick view)',
       firstSuffix: 'for the first 3 hours',
       afterSuffix: 'per hour after the 3rd hour',
-      noteBefore: 'The scheduling call is',
+      noteBefore: 'First chat:',
       free: 'free',
     },
     cta: {
@@ -468,7 +341,7 @@ export const TRANSLATIONS = {
         { q: 'Can you help last-minute?', a: 'If I’m available, yes. Message me with place, time, and urgency.' },
         { q: 'How does payment work?', a: 'We confirm pricing before the appointment. Any extra time/travel is aligned transparently.' },
         { q: 'Is it confidential?', a: 'Yes. I handle information discreetly, especially for medical and legal situations.' },
-        { q: 'Which languages do you support?', a: 'Portuguese, Japanese, and English.' },
+        { q: 'Which languages do you support?', a: 'Portuguese and Japanese (website in PT/EN).' },
       ],
     },
     stickyCta: {

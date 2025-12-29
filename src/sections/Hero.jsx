@@ -57,6 +57,17 @@ const Hero = ({ onContatoClick }) => {
             <p className="text-lg md:text-xl text-[var(--muted)] mb-6">
             {t('hero.p2')}
             </p>
+
+            <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-8">
+              {(t('hero.badges') || []).map((b, i) => (
+                <span
+                  key={i}
+                  className="text-xs px-3 py-1 rounded-full border border-[var(--border)] bg-[rgba(255,255,255,0.04)] text-[var(--muted)]"
+                >
+                  {b}
+                </span>
+              ))}
+            </div>
           <div className="flex items-center justify-center">
             <Button className="justify-center items-center" onClick={onContatoClick}>
               {t('hero.cta')}

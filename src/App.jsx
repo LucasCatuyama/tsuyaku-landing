@@ -1,10 +1,10 @@
 import { useWhatsAppRedirect } from './hooks/useWhatsAppRedirect';
 import Header from './sections/Header';
 import Hero from './sections/Hero';
+import Process from './sections/Process';
+import Proof from './sections/Proof';
 import Service from './sections/Service';
 import Situations from './sections/Situations';
-import About from './sections/About';
-import Reason from './sections/Reason';
 import Testimonials from './sections/Testimonials';
 import Price from './sections/Price';
 import Faq from './sections/Faq';
@@ -21,10 +21,10 @@ const App = () => {
       <ScrollProgress />
       <Header onContatoClick={redirectWhatsapp}></Header>
       <Hero onContatoClick={redirectWhatsapp}></Hero>
+      <Process />
+      <Proof />
       <Service></Service>
       <Situations />
-      <About></About>
-      <Reason></Reason>
       <Testimonials></Testimonials>
       <Price></Price>
       <Faq />

@@ -75,11 +75,11 @@ const Header = ({ onContatoClick }) => {
             {t('nav.situations')}
           </a>
           <a
-            href="#about"
+            href="#proof"
             className="text-[var(--muted)] hover:text-[var(--text)] transition-colors"
             onClick={() => setMenuOpen(false)}
           >
-            {t('nav.about')}
+            {t('proof.title')}
           </a>
           <a
             href="#testimonial"
@@ -87,13 +87,6 @@ const Header = ({ onContatoClick }) => {
             onClick={() => setMenuOpen(false)}
           >
             {t('nav.testimonials')}
-          </a>
-          <a
-            href="#price"
-            className="text-[var(--muted)] hover:text-[var(--text)] transition-colors"
-            onClick={() => setMenuOpen(false)}
-          >
-            {t('nav.price')}
           </a>
           <a
             href="#faq"

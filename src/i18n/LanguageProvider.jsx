@@ -23,6 +23,11 @@ function detectInitialLanguage() {
 export function LanguageProvider({ children }) {
   const [lang, setLangRaw] = useLocalStorageState('tsuyaku.lang', detectInitialLanguage());
 
+  // If user previously had an unsupported language saved (e.g. JA), auto-fallback to PT.
+  useEffect(() => {
+    if (!SUPPORTED_LANGS.includes(lang)) setLangRaw('pt');
+  }, [lang, setLangRaw]);
+
   const setLang = useCallback(
     (next) => {
       const normalized = normalizeLang(next) || 'pt';

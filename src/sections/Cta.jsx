@@ -67,3 +67,4 @@ const Cta = ({ onContatoClick }) => {
 };
 
 export default Cta;
+

@@ -77,3 +77,4 @@ const Hero = ({ onContatoClick }) => {
 };
 
 export default Hero;
+

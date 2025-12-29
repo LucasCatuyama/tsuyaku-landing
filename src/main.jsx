@@ -8,7 +8,7 @@ import { LanguageProvider } from './i18n/LanguageProvider.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LanguageProvider>
-      <App />
+    <App />
     </LanguageProvider>
   </StrictMode>,
 )

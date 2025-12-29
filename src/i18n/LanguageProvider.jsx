@@ -7,7 +7,6 @@ const LanguageContext = createContext(null);
 function normalizeLang(candidate) {
   const raw = (candidate || '').toLowerCase();
   if (raw.startsWith('pt')) return 'pt';
-  if (raw.startsWith('ja')) return 'ja';
   if (raw.startsWith('en')) return 'en';
   return null;
 }

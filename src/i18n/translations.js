@@ -1,4 +1,4 @@
-export const SUPPORTED_LANGS = ['pt', 'ja', 'en'];
+export const SUPPORTED_LANGS = ['pt', 'en'];
 
 export const TRANSLATIONS = {
   pt: {
